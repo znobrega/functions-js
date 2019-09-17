@@ -1,8 +1,7 @@
-Array.prototype.map = function(predicate) {
-  const result = []
+Array.prototype.map = function(mapValue) {
+  const result = [];
 
-  for (let value of this)
-    result.push(predicate(value))
+  for (let value of this) result.push(mapValue(value));
 
-  return result
-} 
+  return result;
+};
